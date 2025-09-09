@@ -94,3 +94,27 @@ button:focus-visible {
     left: calc(var(--height) + 2px);
   }
 }
+.cardHolder{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.extensionCard{
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 5px;
+  .content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    .icon{
+      background-color: green;
+      aspect-ratio: 1/1;
+      border-radius: 5px;
+    }
+  }
+  .buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+}
